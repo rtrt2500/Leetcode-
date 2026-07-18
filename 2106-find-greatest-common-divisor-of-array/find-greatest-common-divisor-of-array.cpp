@@ -1,0 +1,10 @@
+class Solution {
+public:
+    int findGCD(vector<int>& nums) {
+        int a,b;
+         a = *min_element(nums.begin(), nums.end());
+         b = *max_element(nums.begin(), nums.end());
+
+        return gcd(a, b);
+    }
+};
