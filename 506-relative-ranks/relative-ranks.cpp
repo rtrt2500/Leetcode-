@@ -7,8 +7,6 @@ public:
         for (int i = 0; i < n; ++i) {
             sortedScores[i] = {score[i], i};
         }
-        
-        // Sort in descending order
         sort(sortedScores.rbegin(), sortedScores.rend());
         
         vector<string> result(n);
